@@ -68,12 +68,10 @@ function checkWinner() {
 
     if (pos1val != "" && pos2val != "" && pos3val != "") {
       if (pos1val === pos2val && pos2val === pos3val) {
-        setTimeout(() => {
           container.classList.add("bg-opacity");
           winnerMsg.classList.remove("hide");
           img.src = `./assets/victory.gif`;
           winnerH1.innerHTML = `Congratulations`;
-        }, 50);
         showWinner(pos1val);
       }
     }
