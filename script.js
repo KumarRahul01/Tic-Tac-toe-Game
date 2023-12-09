@@ -68,10 +68,10 @@ function checkWinner() {
 
     if (pos1val != "" && pos2val != "" && pos3val != "") {
       if (pos1val === pos2val && pos2val === pos3val) {
-          container.classList.add("bg-opacity");
-          winnerMsg.classList.remove("hide");
-          img.src = `./assets/victory.gif`;
-          winnerH1.innerHTML = `Congratulations`;
+        container.classList.add("bg-opacity");
+        winnerMsg.classList.remove("hide");
+        img.src = `./assets/victory.gif`;
+        winnerH1.innerHTML = `Congratulations`;
         showWinner(pos1val);
       }
     }
@@ -80,6 +80,7 @@ function checkWinner() {
 
 
 const matchDraw = () => {
+  img.src = "";
   img.src = `./assets/lost.gif`;
   winnerMsg.classList.remove("hide");
   winnerH1.innerHTML = `Match Draw`;
