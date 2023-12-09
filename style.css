@@ -33,7 +33,7 @@ button{
 }
 
 .heading{
-  margin-top: -5vh;
+  margin-top: -10vh;
   font-size: 32px;
 }
 
@@ -261,13 +261,3 @@ button{
 .play-btn{
   font-size: 1.5rem;
 }
-
-}
-
-
-/* @media (min-width: 1350px){
-  .winner{
-    height: 75vh;
-    padding-bottom: 50px;
-  }
-} */
